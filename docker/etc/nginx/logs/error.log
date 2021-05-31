@@ -5,3 +5,4 @@
 2021/05/31 14:26:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
 2021/05/31 14:26:40 [notice] 1#1: start worker processes
 2021/05/31 14:26:40 [notice] 1#1: start worker process 25
+2021/05/31 14:27:52 [info] 25#25: *1 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80

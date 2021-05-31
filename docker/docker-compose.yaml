@@ -17,3 +17,15 @@ services:
   volumes:
    - .:/docker
    - ./etc/php.ini:/usr/local/etc/php/php.ini
+
+ mariadb:
+  image: mariadb:latest
+  container_name: mariadb
+  environment:
+   - MYSQL_DATABASE=mydb # 처음 이미지 생성 후 컨테이너 실행 시 DB를 준비한다. 덮어쓰진 않음.
+   - MYSQL_USER=myuser # 사용자를 지정.
+   - MYSQL_ROOT_PASSWORD=myroot12345 # 관리자 비밀번호.
+  volumes:
+   - ./var/lib/mysql:/var/lib/mysql
+  ports:
+   - "1106:3306"
