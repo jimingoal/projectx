@@ -12,7 +12,12 @@ services:
    - "1180:80"
 
  php:
-  image: php:8.0.5-fpm
+  # image: php:8.0.5-fpm
+  build:
+   context: .
+   # 별도의 Dockerfile 로 이미지를 생성하고,
+   # mysqli extension 설치를 하기 때문에 'Dockerfile' 로 작업한다.
+   dockerfile: Dockerfile.php 
   container_name: php
   volumes:
    - .:/docker
