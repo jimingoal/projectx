@@ -270,3 +270,10 @@
 2021/05/31 05:35:12 [notice] 1#1: signal 17 (SIGCHLD) received from 33
 2021/05/31 05:35:12 [notice] 1#1: worker process 33 exited with code 0
 2021/05/31 05:35:12 [notice] 1#1: exit
+2021/06/01 02:49:08 [notice] 1#1: using the "epoll" event method
+2021/06/01 02:49:08 [notice] 1#1: nginx/1.19.7
+2021/06/01 02:49:08 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/01 02:49:08 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/01 02:49:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/01 02:49:08 [notice] 1#1: start worker processes
+2021/06/01 02:49:08 [notice] 1#1: start worker process 35

@@ -28,7 +28,28 @@ services:
       - ./etc/php.ini:/usr/local/etc/php/php.ini
 
   # MariaDB 설정
-  # 주의: 각종 계정이나 루트 비번을 설정하면, DB 에 기록된다. 그래서 나중에 다시 변경하려면 DB 에서 변경을 해야 한다. 
+  # 주의: 각종 계정이나 루트 비번을 설정하면, DB 에 기록된다. 그래서 나중에 다시 변경하려면 DB 에서 변경을 해야 한다.
+  mariadb:
+    image: mariadb:latest
+    container_name: www_docker_mariadb
+    environment:
+      - MYSQL_DATABASE=centerx # 처음 이미지 생성 후, 컨테이너 실행시, DB 를 준비한다. 덮어쓰지 않음.
+      - MYSQL_USER=nakun # 컨테이너 실행시, 사용자를 지정한다.
+      - MYSQL_PASSWORD=637283aa!
+      - MYSQL_ROOT_PASSWORD=637283aa! # 컨테이너 실행시, 관리자 비밀번호.
+    volumes:
+#      - ./etc:/etc/mysql # mysql 설정을 ./etc 에 지정한다. 굳이 mysql 설정은 안해도 된다. 기본 설정이 충분하다.
+
+      # HOST OS 폴더의 /Users/thruthesky/www/docker/mysqldata 를 Guest OS 의 /var/lib/mysql 에 링크. 이렇게 해서,
+      # MariaDB(또는 mysql) database 파일을 Host OS 폴더에 저장한다. 즉, MariaDB 데이터 파일이 Host OS 에 저장되는 것이다.
+      # 즉, Docker container 또는 image 가 삭제되어도, 자료는 HOST OS 에 저장된다.
+      # 참고로, 이 경로는 처음 docker-compose up 으로 설치 하기 전에 지정해야한다.
+      # 만약, 나중에 지정을 하면, docker system prune -a(또는 docker image 삭제)를 하고, 다시 설치해야 한다.
+      - ./var/lib/mysql:/var/lib/mysql
+
+    # DB 포트 연결
+    ports:
+      - "3306:3306"
 
 volumes:
   mysqldata: {}
