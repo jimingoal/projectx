@@ -1,14 +1,57 @@
 version: '3.3'
 
 services:
- nginx:
-  image: nginx:1.20.0-alpine
-  container_name: nginxCompose
-  volumes:
-   - .:/docker
-   #- ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
-   #- ./etc/nginx/logs:/etc/nginx/logs
-  ports:
-   - "80:80" 
-   - "8000:80" 
-   - "8001:80" 
+  nginx:
+    image: nginx:1.19.7-alpine
+    container_name: nginx_container
+    volumes:
+    - .:/docker
+    - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+    - ./etc/nginx/logs:/etc/nginx/logs
+    ports:
+    - "80:80" 
+    #- "443:443"
+    #- "8000:80" 
+    #- "8001:80" 
+  
+  php:
+    #image: php:8.0.6-fpm
+    build:
+        context: .
+        dockerfile: php.dockerfile
+    container_name: php_container
+    volumes:
+      - .:/docker
+    #  - ./etc/php.ini:/usr/local/etc/php/php.ini
+  
+  mysql:
+    image: mysql:latest
+    networks:
+      - my-network
+    container_name: mysql_container
+    environment:
+#      MYSQL_ROOT_PASSWORD: notSecureChangeMe
+       - MYSQL_DATABASE=mydb
+       - MYSQL_USER=myuser 
+       - MYSQL_PASSWORD=mypass12345 
+       - MYSQL_ROOT_PASSWORD=myroot12345 
+
+    #volumes: 
+    # - ./var/lib/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+      image: phpmyadmin
+      restart: always
+      ports:
+        - 33060:80
+      environment:
+        - PMA_ARBITRARY=1
+      depends_on: 
+        - mysql
+      networks: 
+        - my-network
+
+networks:
+  my-network:
