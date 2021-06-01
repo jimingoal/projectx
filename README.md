@@ -1,2 +1,1 @@
-# Hello World
-## hello everyone
+# docker + nginx + php + mariaDB
