@@ -1,7 +1,7 @@
 <?php
 
 $db_name = "mydb";
-$db_server = "127.0.0.1"; // mariadb로 해야 하나?
+$db_server = "mariadb"; // mariadb로 해야 하나?
 $db_user = "myuser";
 $db_pass = "mypath12345";
 

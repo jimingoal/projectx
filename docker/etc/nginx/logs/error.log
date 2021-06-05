@@ -364,3 +364,114 @@ Stack trace:
 #2 {main}
   thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "127.0.0.1"
 2021/06/05 05:55:28 [info] 26#26: *11 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:11:05 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 06:11:05 [notice] 26#26: gracefully shutting down
+2021/06/05 06:11:05 [notice] 26#26: exiting
+2021/06/05 06:11:05 [notice] 26#26: exit
+2021/06/05 06:11:05 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/06/05 06:11:05 [notice] 1#1: worker process 26 exited with code 0
+2021/06/05 06:11:05 [notice] 1#1: exit
+2021/06/05 06:11:29 [notice] 1#1: using the "epoll" event method
+2021/06/05 06:11:29 [notice] 1#1: nginx/1.19.7
+2021/06/05 06:11:29 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 06:11:29 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 06:11:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 06:11:29 [notice] 1#1: start worker processes
+2021/06/05 06:11:29 [notice] 1#1: start worker process 27
+2021/06/05 06:11:41 [error] 27#27: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /docker/home/flutter_api/db.php:8
+Stack trace:
+#0 /docker/home/flutter_api/db.php(8): PDO->__construct()
+#1 /docker/home/flutter_api/list.php(3): include('...')
+#2 {main}
+  thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "127.0.0.1"
+2021/06/05 06:11:41 [info] 27#27: *1 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:13:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 06:13:52 [notice] 27#27: gracefully shutting down
+2021/06/05 06:13:52 [notice] 27#27: exiting
+2021/06/05 06:13:52 [notice] 27#27: exit
+2021/06/05 06:13:52 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2021/06/05 06:13:52 [notice] 1#1: worker process 27 exited with code 0
+2021/06/05 06:13:52 [notice] 1#1: exit
+2021/06/05 06:14:27 [notice] 1#1: using the "epoll" event method
+2021/06/05 06:14:27 [notice] 1#1: nginx/1.19.7
+2021/06/05 06:14:27 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 06:14:27 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 06:14:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 06:14:27 [notice] 1#1: start worker processes
+2021/06/05 06:14:27 [notice] 1#1: start worker process 26
+2021/06/05 06:15:09 [error] 26#26: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /docker/home/flutter_api/db.php:8
+Stack trace:
+#0 /docker/home/flutter_api/db.php(8): PDO->__construct()
+#1 /docker/home/flutter_api/list.php(3): include('...')
+#2 {main}
+  thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.2:9000", host: "127.0.0.1"
+2021/06/05 06:15:09 [info] 26#26: *5 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:15:35 [info] 26#26: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2021/06/05 06:16:23 [error] 26#26: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /docker/home/flutter_api/db.php:8
+Stack trace:
+#0 /docker/home/flutter_api/db.php(8): PDO->__construct()
+#1 /docker/home/flutter_api/list.php(3): include('...')
+#2 {main}
+  thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.2:9000", host: "127.0.0.1"
+2021/06/05 06:16:23 [info] 26#26: *7 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:16:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 06:16:49 [notice] 26#26: gracefully shutting down
+2021/06/05 06:16:49 [notice] 26#26: exiting
+2021/06/05 06:16:49 [notice] 26#26: exit
+2021/06/05 06:16:49 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/06/05 06:16:49 [notice] 1#1: worker process 26 exited with code 0
+2021/06/05 06:16:50 [notice] 1#1: exit
+2021/06/05 06:17:04 [notice] 1#1: using the "epoll" event method
+2021/06/05 06:17:04 [notice] 1#1: nginx/1.19.7
+2021/06/05 06:17:04 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 06:17:04 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 06:17:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 06:17:04 [notice] 1#1: start worker processes
+2021/06/05 06:17:04 [notice] 1#1: start worker process 25
+2021/06/05 06:17:17 [error] 25#25: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /docker/home/flutter_api/db.php:8
+Stack trace:
+#0 /docker/home/flutter_api/db.php(8): PDO->__construct()
+#1 /docker/home/flutter_api/list.php(3): include('...')
+#2 {main}
+  thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.3:9000", host: "127.0.0.1"
+2021/06/05 06:17:17 [info] 25#25: *1 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:19:02 [info] 25#25: *4 client timed out (110: Operation timed out) while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2021/06/05 06:19:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 06:19:03 [notice] 25#25: gracefully shutting down
+2021/06/05 06:19:03 [notice] 25#25: exiting
+2021/06/05 06:19:03 [notice] 25#25: exit
+2021/06/05 06:19:03 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/06/05 06:19:03 [notice] 1#1: worker process 25 exited with code 0
+2021/06/05 06:19:03 [notice] 1#1: exit
+2021/06/05 06:19:17 [notice] 1#1: using the "epoll" event method
+2021/06/05 06:19:17 [notice] 1#1: nginx/1.19.7
+2021/06/05 06:19:17 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 06:19:17 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 06:19:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 06:19:17 [notice] 1#1: start worker processes
+2021/06/05 06:19:17 [notice] 1#1: start worker process 24
+2021/06/05 06:19:54 [error] 24#24: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: could not find driver in /docker/home/flutter_api/db.php:8
+Stack trace:
+#0 /docker/home/flutter_api/db.php(8): PDO->__construct()
+#1 /docker/home/flutter_api/list.php(3): include('...')
+#2 {main}
+  thrown in /docker/home/flutter_api/db.php on line 8" while reading response header from upstream, client: 172.22.0.1, server: _, request: "GET /flutter_api/list.php HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "127.0.0.1"
+2021/06/05 06:19:54 [info] 24#24: *5 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:20:23 [info] 24#24: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.22.0.1, server: 0.0.0.0:80
+2021/06/05 06:20:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 06:20:41 [notice] 24#24: gracefully shutting down
+2021/06/05 06:20:41 [notice] 24#24: exiting
+2021/06/05 06:20:41 [notice] 24#24: exit
+2021/06/05 06:20:41 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/06/05 06:20:41 [notice] 1#1: worker process 24 exited with code 0
+2021/06/05 06:20:41 [notice] 1#1: exit
+2021/06/05 06:22:59 [notice] 1#1: using the "epoll" event method
+2021/06/05 06:22:59 [notice] 1#1: nginx/1.19.7
+2021/06/05 06:22:59 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 06:22:59 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 06:22:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 06:22:59 [notice] 1#1: start worker processes
+2021/06/05 06:22:59 [notice] 1#1: start worker process 26
+2021/06/05 06:23:05 [info] 26#26: *1 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:23:55 [info] 26#26: *3 client 172.22.0.1 closed keepalive connection
+2021/06/05 06:23:55 [info] 26#26: *5 client 172.22.0.1 closed keepalive connection
