@@ -12,7 +12,9 @@ services:
       - "80:80"
 
   php:
-    image: php:8.0.6-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile.php
     container_name: php-container
     volumes:
       - .:/docker
@@ -21,3 +23,20 @@ services:
   mariadb:
     image: mariadb:latest
     container_name: mariadb-container
+    environment:
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=pass123
+      - MYSQL_ROOT_PASSWORD=pass123
+    volumes:
+      - ./var/lib/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 33060:80
+    environment:
+      - PMA_ARBITRARY=1
