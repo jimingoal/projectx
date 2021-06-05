@@ -17,3 +17,7 @@ services:
     volumes:
       - .:/docker
       - ./php.ini:/user/local/etc/php.php.ini
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb-container

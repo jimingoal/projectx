@@ -1,0 +1,58 @@
+2021/06/05 11:35:48 [notice] 1#1: using the "epoll" event method
+2021/06/05 11:35:48 [notice] 1#1: nginx/1.20.0
+2021/06/05 11:35:48 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 11:35:48 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 11:35:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 11:35:48 [notice] 1#1: start worker processes
+2021/06/05 11:35:48 [notice] 1#1: start worker process 25
+2021/06/05 11:36:08 [error] 25#25: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/05 11:36:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 11:36:41 [notice] 25#25: gracefully shutting down
+2021/06/05 11:40:57 [notice] 1#1: using the "epoll" event method
+2021/06/05 11:40:57 [notice] 1#1: nginx/1.20.0
+2021/06/05 11:40:57 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 11:40:57 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 11:40:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 11:40:57 [notice] 1#1: start worker processes
+2021/06/05 11:40:57 [notice] 1#1: start worker process 25
+2021/06/05 11:41:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 11:41:15 [notice] 25#25: gracefully shutting down
+2021/06/05 11:41:18 [notice] 25#25: exiting
+2021/06/05 11:41:18 [notice] 25#25: exit
+2021/06/05 11:41:18 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/06/05 11:41:18 [notice] 1#1: worker process 25 exited with code 0
+2021/06/05 11:41:18 [notice] 1#1: exit
+2021/06/05 11:41:36 [notice] 1#1: using the "epoll" event method
+2021/06/05 11:41:36 [notice] 1#1: nginx/1.20.0
+2021/06/05 11:41:36 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 11:41:36 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 11:41:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 11:41:36 [notice] 1#1: start worker processes
+2021/06/05 11:41:36 [notice] 1#1: start worker process 24
+2021/06/05 11:42:58 [info] 24#24: *1 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 11:43:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 11:43:00 [notice] 24#24: gracefully shutting down
+2021/06/05 11:43:00 [notice] 24#24: exiting
+2021/06/05 11:43:00 [notice] 24#24: exit
+2021/06/05 11:43:00 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/06/05 11:43:00 [notice] 1#1: worker process 24 exited with code 0
+2021/06/05 11:43:00 [notice] 1#1: exit
+2021/06/05 11:46:55 [notice] 1#1: using the "epoll" event method
+2021/06/05 11:46:55 [notice] 1#1: nginx/1.20.0
+2021/06/05 11:46:55 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/05 11:46:55 [notice] 1#1: OS: Linux 5.10.25-linuxkit
+2021/06/05 11:46:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/05 11:46:55 [notice] 1#1: start worker processes
+2021/06/05 11:46:55 [notice] 1#1: start worker process 25
+2021/06/05 11:48:08 [info] 25#25: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 11:51:44 [info] 25#25: *5 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 11:53:08 [info] 25#25: *8 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 11:55:36 [info] 25#25: *10 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 11:57:36 [info] 25#25: *13 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 12:52:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/05 12:52:26 [notice] 25#25: gracefully shutting down
+2021/06/05 12:52:26 [notice] 25#25: exiting
+2021/06/05 12:52:26 [notice] 25#25: exit
+2021/06/05 12:52:26 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2021/06/05 12:52:26 [notice] 1#1: worker process 25 exited with code 0
+2021/06/05 12:52:26 [notice] 1#1: exit
