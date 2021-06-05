@@ -7,4 +7,4 @@ RUN docker-php-ext-install mysqli
 # 환경 설정 파일을 Production 의 것으로 복사한다.
 RUN cp "$PHP_INI_DIR/php.ini" "$PHP_INI_DIR/php.ini"
 
-RUN ln -s /tmp/mysql.sock /var/mysql/mysql.sock
+# RUN ln -s /tmp/mysql.sock /var/mysql/mysql.sock
