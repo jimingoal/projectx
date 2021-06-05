@@ -6,6 +6,7 @@ services:
     container_name: nginx
     volumes:
     - .:/docker
+    - ./data/nginx:/etc/nginx/conf.d
     - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
     - ./etc/nginx/logs:/etc/nginx/logs
     ports:
@@ -31,7 +32,7 @@ services:
     volumes: 
       - ./var/lib/mysql:/var/lib/mysql
     ports:
-      - "13306:3306"
+      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin
