@@ -2,14 +2,14 @@ version: '3.3'
 
 services:
   nginx:
-    image: nginx:1.19.7-alpine
-    container_name: nginx_container
+    image: nginx:1.19.7-alpine # 어떤 이미지를 사용할 것인지
+    container_name: nginx_container # 컨테이너명 임의로 설정
     volumes:
-    - .:/docker
-    - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+    - .:/docker # 도커의 서버에서 데이터들을 저장할 때 실제 HostOS의 어느 공간을 mount할 것인지
+    - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf # 내설정파일을 docker의 어느 부분과 맵핑할 것인지
     - ./etc/nginx/logs:/etc/nginx/logs
     ports:
-    - "80:80" 
+    - "80:80" # Host Port => Guest Port
     - "443:443"
     #- "8000:80" 
     #- "8001:80" 
