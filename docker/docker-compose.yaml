@@ -25,11 +25,9 @@ services:
     mariadb:
         image: mariadb:latest
         container_name: mariadb
+        env_file: .env
         environment:
-            - MYSQL_DATABASE=mydb # 처음 이미지 생성 후 컨테이너 실행 시 DB를 준비한다. 덮어쓰진 않음.
-            - MYSQL_USER=myuser # 사용자를 지정.
-            - MYSQL_PASSWORD=myroot12345 # 사용자 비밀번호.
-            - MYSQL_ROOT_PASSWORD=myroot12345 # 관리자 비밀번호.
+            TZ: Asia/Seoul
         volumes:
             - ./var/lib/mysql:/var/lib/mysql
         ports:

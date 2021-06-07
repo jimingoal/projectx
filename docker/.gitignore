@@ -1,1 +1,3 @@
-/etc/nginx/logs/
+etc/nginx/logs/*
+var/lib/mysql/
+*.log
