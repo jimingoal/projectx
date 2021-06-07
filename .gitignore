@@ -1,3 +1,2 @@
-/docker/var/lib/mysql/
-/docker/.env
-/docker/etc/nginx/logs/
+docker/etc/nginx/logs/*
+docker/var/lib/mysql/

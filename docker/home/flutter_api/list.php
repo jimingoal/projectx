@@ -1,6 +1,9 @@
 <?php
 header('Content-Type: application/json');
-include "./db.php";
+include "../flutter_api/db.php";
+
+// error_reporting(E_ALL);
+// ini_set("display_errors", 1);
 
 $stmt = $db->prepare("SELECT id, name, age from student");
 $stmt->execute();

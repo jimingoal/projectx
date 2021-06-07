@@ -5,9 +5,7 @@ import './screens/create.dart';
 import './screens/details.dart';
 import './screens/edit.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
         '/create': (context) => Create(),
         '/details': (context) => Details(),
         '/edit': (context) => Edit(),
-      }
+      },
     );
   }
 }
