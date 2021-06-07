@@ -1,7 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 import '../env.sample.dart';
 import '../models/student.dart';
@@ -26,8 +25,7 @@ class _HomeState extends State<Home> {
   }
 
   Future<List<Student>> getStudentsList() async {
-    var url = Uri.parse("${Env.URL_PREFIX}/list.php");
-    final response = await http.get(url);
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/list.php"));
     return json
         .decode(response.body)
         .cast<Map<String, dynamic>>()

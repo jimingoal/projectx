@@ -304,3 +304,10 @@ Stack trace:
 2021/06/07 00:57:55 [notice] 1#1: start worker processes
 2021/06/07 00:57:55 [notice] 1#1: start worker process 34
 2021/06/07 00:58:31 [info] 34#34: *3 client 172.18.0.1 closed keepalive connection
+2021/06/07 01:04:53 [notice] 1#1: signal 15 (SIGTERM) received, exiting
+2021/06/07 01:04:53 [notice] 34#34: signal 15 (SIGTERM) received, exiting
+2021/06/07 01:04:53 [notice] 1#1: signal 14 (SIGALRM) received
+2021/06/07 01:04:53 [info] 34#34: epoll_wait() failed (4: Interrupted system call)
+2021/06/07 01:04:53 [notice] 34#34: exiting
+2021/06/07 01:04:53 [notice] 34#34: exit
+2021/06/07 01:04:53 [notice] 1#1: signal 14 (SIGALRM) received
