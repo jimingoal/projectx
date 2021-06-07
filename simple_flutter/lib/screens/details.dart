@@ -5,9 +5,9 @@ import 'package:simple_flutter/models/student.dart';
 import 'package:simple_flutter/screens/edit.dart';
 
 class Details extends StatefulWidget {
-  final Student student;
+  final Student? student;
 
-  Details({Key? key, required this.student}) : super(key: key);
+  Details({Key? key, this.student}) : super(key: key);
 
   @override
   _DetailsState createState() => _DetailsState();
@@ -18,7 +18,7 @@ class _DetailsState extends State<Details> {
     await http.post(
       Uri.parse("${Env.URL_PREFIX}/delte.php"),
       body: {
-        'id': widget.student.id.toString(),
+        'id': widget.student?.id.toString(),
       },
     );
 
@@ -67,14 +67,14 @@ class _DetailsState extends State<Details> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Name : ${widget.student.name}',
+              'Name : ${widget.student?.name}',
               style: TextStyle(fontSize: 20),
             ),
             Padding(
               padding: EdgeInsets.all(10),
             ),
             Text(
-              "Age : ${widget.student.age}",
+              "Age : ${widget.student?.age}",
               style: TextStyle(fontSize: 20),
             )
           ],

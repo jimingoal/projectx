@@ -6,8 +6,8 @@ import '../models/student.dart';
 import '../widgets/form.dart';
 
 class Edit extends StatefulWidget {
-  final Student student;
-  const Edit({Key? key, required this.student}) : super(key: key);
+  final Student? student;
+  const Edit({Key? key, this.student}) : super(key: key);
 
   @override
   _EditState createState() => _EditState();
@@ -23,8 +23,8 @@ class _EditState extends State<Edit> {
 
   @override
   void initState() {
-    nameController = TextEditingController(text: widget.student.name);
-    ageController = TextEditingController(text: widget.student.age.toString());
+    nameController = TextEditingController(text: widget.student?.name);
+    ageController = TextEditingController(text: widget.student?.age.toString());
     super.initState();
   }
 
@@ -32,7 +32,7 @@ class _EditState extends State<Edit> {
   Future editStudent() async => await http.post(
         Uri.parse("${Env.URL_PREFIX}/update.php"),
         body: {
-          "id": widget.student.id.toString(),
+          "id": widget.student?.id.toString(),
           "name": nameController.text,
           "age": ageController.text,
         },
