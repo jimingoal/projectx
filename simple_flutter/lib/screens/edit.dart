@@ -38,10 +38,14 @@ class _EditState extends State<Edit> {
         },
       );
 
+  void _onConfirm(context) async {
+    var response = await editStudent();
+
+    Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
+  }
+
   @override
   Widget build(BuildContext context) {
-    _onConfrim(BuildContext context) async => await editStudent();
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Edit'),
@@ -52,7 +56,7 @@ class _EditState extends State<Edit> {
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
           ),
-          onPressed: () => _onConfrim(context),
+          onPressed: () => _onConfirm(context),
         ),
       ),
       body: Container(

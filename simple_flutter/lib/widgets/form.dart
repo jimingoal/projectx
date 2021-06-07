@@ -24,8 +24,8 @@ class _AppFormState extends State<AppForm> {
 
   String? _validateAge(String? value) =>
       new RegExp(r'(?<=\s|^)\d+(?=\s|$)').hasMatch(value!)
-          ? 'Age must be a number'
-          : null;
+          ? null
+          : 'Age must be a number';
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class _AppFormState extends State<AppForm> {
           ),
           TextFormField(
             controller: widget.ageController,
-            keyboardType: TextInputType.text,
+            keyboardType: TextInputType.number,
             decoration: InputDecoration(labelText: 'Age'),
             validator: _validateAge,
           )

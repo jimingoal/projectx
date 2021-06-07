@@ -1,3 +1,3 @@
 class Env {
-  static const String URL_PREFIX = "http://127.0.0.1/flutter_api";
+  static const String URL_PREFIX = "http://10.0.2.2/flutter_api";
 }
