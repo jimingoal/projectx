@@ -183,3 +183,216 @@
 2021/06/04 10:07:30 [notice] 1#1: start worker processes
 2021/06/04 10:07:30 [notice] 1#1: start worker process 33
 2021/06/04 10:11:29 [info] 33#33: *4 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 10:29:53 [error] 33#33: *9 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected identifier "header" in /docker/home/index.php on line 6" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:30:07 [error] 33#33: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  Cannot modify header information - headers already sent by (output started at /docker/home/index.php:3) in /docker/home/index.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /docker/home/db.php:8
+Stack trace:
+#0 /docker/home/db.php(8): PDO->__construct()
+#1 /docker/home/index.php(7): include('...')
+#2 {main}
+  thrown in /docker/home/db.php on line" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:30:07 [error] 33#33: *9 FastCGI sent in stderr: "8" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:30:07 [error] 33#33: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  Cannot modify header information - headers already sent by (output started at /docker/home/index.php:3) in /docker/home/index.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /docker/home/db.php:8
+Stack trace:
+#0 /docker/home/db.php(8): PDO->__construct()
+#1 /docker/home/index.php(7): include('...')
+#2 {main}
+  thrown in /docker/home/db.php on line 8" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:30:13 [error] 33#33: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /docker/home/db.php:8
+Stack trace:
+#0 /docker/home/db.php(8): PDO->__construct()
+#1 /docker/home/index.php(7): include('...')
+#2 {main}
+  thrown in /docker/home/db.php on line 8" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:34:15 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /docker/home/db.php:8
+Stack trace:
+#0 /docker/home/db.php(8): PDO->__construct()
+#1 /docker/home/index.php(7): include('...')
+#2 {main}
+  thrown in /docker/home/db.php on line 8" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:43:04 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /docker/home/db.php:8
+Stack trace:
+#0 /docker/home/db.php(8): PDO->__construct()
+#1 /docker/home/index.php(7): include('...')
+#2 {main}
+  thrown in /docker/home/db.php on line 8" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:19 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:20 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:43:27 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:27 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:43:27 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:27 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:43:34 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:34 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:43:34 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:43:34 [error] 33#33: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db in /docker/home/index.php on line 9PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:44:04 [info] 33#33: *16 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 10:48:25 [error] 33#33: *29 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:49:25 [error] 33#33: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /docker/home/db.php on line 10" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost", referrer: "http://localhost/"
+2021/06/04 10:50:01 [info] 33#33: *29 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:51:21 [error] 33#33: *33 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:52:10 [error] 33#33: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /docker/home/db.php on line 13" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:52:29 [error] 33#33: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Address not available in /docker/home/db.php on line 13" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:52:52 [error] 33#33: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /docker/home/db.php on line 13" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 10:53:43 [error] 33#33: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Address not available in /docker/home/db.php on line 13" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 11:11:11 [info] 33#33: *52 client 172.18.0.1 closed keepalive connection
+2021/06/04 11:22:57 [error] 33#33: *54 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 11:24:22 [error] 33#33: *58 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "127.0.0.1"
+2021/06/04 11:30:22 [info] 33#33: *66 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 11:31:36 [info] 33#33: *68 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:03:49 [info] 33#33: *83 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:05:42 [error] 33#33: *90 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "10.0.2.2"
+2021/06/04 12:05:50 [error] 33#33: *90 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "10.0.2.2"
+2021/06/04 12:06:35 [info] 33#33: *91 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:07:50 [info] 33#33: *94 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:12:21 [info] 33#33: *95 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:14:14 [info] 33#33: *98 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "14.63.97.151"
+2021/06/04 12:20:39 [info] 33#33: *101 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:30:33 [error] 33#33: *110 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php?name=%22jimin%22&age=%2233%22 HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 12:31:31 [info] 33#33: *110 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:35:14 [info] 33#33: *112 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:35:15 [info] 33#33: *113 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:35:16 [info] 33#33: *115 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:36:08 [info] 33#33: *123 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:36:41 [info] 33#33: *125 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:36:42 [info] 33#33: *117 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:36:42 [info] 33#33: *118 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:36:46 [error] 33#33: *128 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "192.168.56.1"
+2021/06/04 12:36:51 [info] 33#33: *128 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:36:55 [error] 33#33: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "id" in /docker/home/delete.php on line 6" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /delete.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "192.168.56.1"
+2021/06/04 12:36:56 [info] 33#33: *120 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:37:38 [error] 33#33: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "id" in /docker/home/details.php on line 6" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /details.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "192.168.56.1"
+2021/06/04 12:37:48 [error] 33#33: *130 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "id" in /docker/home/update.php on line 5PHP message: PHP Warning:  Undefined array key "name" in /docker/home/update.php on line 6PHP message: PHP Warning:  Undefined array key "age" in /docker/home/update.php on line 7" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /update.php HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "192.168.56.1"
+2021/06/04 12:37:57 [info] 33#33: *133 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:38:57 [info] 33#33: *138 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:38:57 [info] 33#33: *139 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 12:39:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/04 12:39:36 [notice] 33#33: gracefully shutting down
+2021/06/04 12:40:05 [notice] 1#1: using the "epoll" event method
+2021/06/04 12:40:05 [notice] 1#1: nginx/1.20.0
+2021/06/04 12:40:05 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/04 12:40:05 [notice] 1#1: OS: Linux 5.4.72-microsoft-standard-WSL2
+2021/06/04 12:40:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/04 12:40:05 [notice] 1#1: start worker processes
+2021/06/04 12:40:05 [notice] 1#1: start worker process 25
+2021/06/04 12:41:18 [error] 25#25: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/create.php on line 6PHP message: PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /docker/home/create.php:9
+Stack trace:
+#0 /docker/home/create.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /docker/home/create.php on line 9" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /create.php?name=%22jimin%22&age=%2235%22 HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/04 12:43:56 [info] 25#25: *9 client 172.18.0.1 closed keepalive connection
+2021/06/04 12:49:58 [info] 25#25: *11 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:10:42 [info] 25#25: *15 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:13:47 [info] 25#25: *17 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:13:47 [info] 25#25: *18 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:14:35 [info] 25#25: *21 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:14:35 [info] 25#25: *22 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:17:15 [info] 25#25: *25 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:17:40 [info] 25#25: *27 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:18:09 [info] 25#25: *29 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:18:45 [info] 25#25: *31 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:20:45 [info] 25#25: *33 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:20:45 [info] 25#25: *34 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:20:57 [info] 25#25: *37 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:20:57 [info] 25#25: *38 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:21:32 [info] 25#25: *41 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:21:32 [info] 25#25: *42 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:22:12 [info] 25#25: *45 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:22:12 [info] 25#25: *47 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:22:12 [info] 25#25: *48 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:22:34 [info] 25#25: *51 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:22:39 [info] 25#25: *53 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:02 [info] 25#25: *55 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:02 [info] 25#25: *58 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:02 [info] 25#25: *57 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:18 [info] 25#25: *61 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:19 [info] 25#25: *63 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:19 [info] 25#25: *65 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:20 [info] 25#25: *67 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:23:20 [info] 25#25: *69 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:28:56 [info] 25#25: *71 client sent invalid method while reading client request line, client: 172.18.0.1, server: _, request: "test"
+2021/06/04 13:50:09 [info] 25#25: *76 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:09 [info] 25#25: *78 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:09 [info] 25#25: *79 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:19 [info] 25#25: *82 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:19 [info] 25#25: *84 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:19 [info] 25#25: *85 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:23 [info] 25#25: *88 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:23 [info] 25#25: *90 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:23 [info] 25#25: *91 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:26 [info] 25#25: *94 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:26 [info] 25#25: *96 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:50:26 [info] 25#25: *97 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:37 [info] 25#25: *100 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:37 [info] 25#25: *103 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:37 [info] 25#25: *102 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:52 [info] 25#25: *106 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:52 [info] 25#25: *108 client 172.18.0.1 closed keepalive connection
+2021/06/04 13:52:52 [info] 25#25: *109 client 172.18.0.1 closed keepalive connection
+2021/06/04 14:02:07 [info] 25#25: *112 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/04 14:02:09 [info] 25#25: *113 client 172.18.0.1 closed keepalive connection
+2021/06/04 14:02:11 [info] 25#25: *115 client 172.18.0.1 closed keepalive connection
+2021/06/04 18:18:00 [notice] 1#1: using the "epoll" event method
+2021/06/04 18:18:00 [notice] 1#1: nginx/1.20.0
+2021/06/04 18:18:00 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/04 18:18:00 [notice] 1#1: OS: Linux 5.4.72-microsoft-standard-WSL2
+2021/06/04 18:18:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/04 18:18:00 [notice] 1#1: start worker processes
+2021/06/04 18:18:00 [notice] 1#1: start worker process 25
+2021/06/04 18:19:06 [info] 25#25: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/05 16:01:01 [info] 25#25: *5 client 172.18.0.1 closed keepalive connection
+2021/06/06 01:43:19 [info] 25#25: *7 client 172.18.0.1 closed keepalive connection
+2021/06/06 01:47:42 [info] 25#25: *9 client 172.18.0.1 closed keepalive connection
