@@ -16,6 +16,7 @@ services:
       - "80:80"
       - "443:443"
      # PHP 의 기본 설정 파일은 컨테이너의 /usr/local/etc 에 있다.
+     command: [nginx-debug, "-g", "daemon off;"]
   php:
     container_name: www_docker_php
     build:
@@ -33,10 +34,10 @@ services:
     image: mariadb:latest
     container_name: www_docker_mariadb
     environment:
-      - MYSQL_DATABASE=centerx # 처음 이미지 생성 후, 컨테이너 실행시, DB 를 준비한다. 덮어쓰지 않음.
+      - MYSQL_DATABASE=oniyuni # 처음 이미지 생성 후, 컨테이너 실행시, DB 를 준비한다. 덮어쓰지 않음.
       - MYSQL_USER=nakun # 컨테이너 실행시, 사용자를 지정한다.
-      - MYSQL_PASSWORD=637283aa!
-      - MYSQL_ROOT_PASSWORD=637283aa! # 컨테이너 실행시, 관리자 비밀번호.
+      - MYSQL_PASSWORD=354900
+      - MYSQL_ROOT_PASSWORD=354900 # 컨테이너 실행시, 관리자 비밀번호.
     volumes:
 #      - ./etc:/etc/mysql # mysql 설정을 ./etc 에 지정한다. 굳이 mysql 설정은 안해도 된다. 기본 설정이 충분하다.
 
@@ -51,5 +52,12 @@ services:
     ports:
       - "3306:3306"
 
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      - PMA_HOST=mariadb
+    ports:
+      - 33060:80
+      
 volumes:
   mysqldata: {}
