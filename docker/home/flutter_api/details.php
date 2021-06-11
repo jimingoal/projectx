@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 include "./db.php";
 
-
 $id = (int) $_POST['id'];
 
 $stmt = $db->prepare("SELECT name, age FROM student WHERE ID = ?");

