@@ -9,22 +9,24 @@
  *
  * 미션 4 완성된 앱을 클라우드에 배포하세요.
  */
-
+if ( str_contains($_SERVER['REQUEST_URI'], 'favicon.ico')) exit;
 
 header('Content-Type: application/json');
 
+include __DIR__ . "/core/db.php";
+include __DIR__ . "/model/user/list.php";
+include __DIR__ . "/model/user/create.php";
 
 if (!isset($_REQUEST['route'])) {
     echo json_encode([
         'response' => 'error_route_is_not_set',
         'request' => $_REQUEST,
     ]);
-} else if ($_REQUEST['route'] == 'user.list') {
-    include __DIR__ . "/flutter_api/db.php";
-    include __DIR__ . "/flutter_api/list.php";
 }
-//    echo json_encode([
-//        'response' => 'error_route_is_not_set',
-//        'request' => $_REQUEST,
-//    ]);
-//}
+
+$route = $_REQUEST['route'];
+$arr = explode('.', $route);
+include __DIR__ . "/controller/{$arr[0]}/{$arr[0]}.controller.php";
+$method = str_replace('.', '_', $route);
+echo json_encode($method());
+
