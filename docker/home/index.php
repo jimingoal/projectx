@@ -25,8 +25,8 @@ if (!isset($_REQUEST['route'])) {
 }
 
 $route = $_REQUEST['route'];
-$arr = explode('.', $route);
-include __DIR__ . "/controller/{$arr[0]}/{$arr[0]}.controller.php";
+$arr = explode('.', $route); // ['user', 'list']
+include __DIR__ . "/controller/{$arr[0]}/{$arr[0]}.controller.php"; //controller/user/user.controller.php
 $method = str_replace('.', '_', $route);
 echo json_encode($method());
 

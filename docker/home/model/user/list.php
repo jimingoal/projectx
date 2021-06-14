@@ -32,7 +32,7 @@
 function user_model_list() {
 
     global $db;
-    $sql = "SELECT * FROM student";
+    $sql = "SELECT * FROM users";
     $stmt = $db->stmt_init();
     $stmt = $db->prepare($sql);
     $stmt->execute();

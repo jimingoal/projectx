@@ -2,7 +2,10 @@ version: '3.3'
 
 services:
   nginx:
-    image: nginx:1.20.0-alpine
+#    image: nginx:1.20.0-alpine //SSL - certbot, bash를 추가하기 위해
+    build:
+      context: .
+      dockerfile: Dockerfile.php
     container_name: nginx
     volumes: 
       - .:/docker
@@ -10,6 +13,7 @@ services:
       - ./etc/nginx/logs:/etc/nginx/logs
     ports:
       - '80:80'
+      - '443:443'
 
   php:
     build:

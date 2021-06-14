@@ -4,7 +4,7 @@ include "./db.php";
 
 $id = (int) $_POST['id'];
 
-$stmt = $db->prepare("SELECT name, age FROM student WHERE ID = ?");
+$stmt = $db->prepare("SELECT name, age FROM users WHERE ID = ?");
 $stmt->execute([$id]);
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 

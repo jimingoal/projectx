@@ -4,7 +4,7 @@ include "./db.php";
 
 
 $id = (int) $_POST['id'];
-$stmt = $db->prepare("DELETE FROM student WHERE id = ?");
+$stmt = $db->prepare("DELETE FROM users WHERE id = ?");
 $result = $stmt->execute([$id]);
 
 echo json_encode([

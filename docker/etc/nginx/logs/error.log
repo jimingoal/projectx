@@ -1288,3 +1288,272 @@ Stack trace:
 2021/06/11 15:39:42 [notice] 1#1: signal 17 (SIGCHLD) received from 24
 2021/06/11 15:39:42 [notice] 1#1: worker process 24 exited with code 0
 2021/06/11 15:39:42 [notice] 1#1: exit
+2021/06/14 02:34:22 [notice] 1#1: using the "epoll" event method
+2021/06/14 02:34:22 [notice] 1#1: nginx/1.20.0
+2021/06/14 02:34:22 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 02:34:22 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 02:34:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 02:34:22 [notice] 1#1: start worker processes
+2021/06/14 02:34:22 [notice] 1#1: start worker process 34
+2021/06/14 02:46:26 [error] 34#34: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 02:46:40 [error] 34#34: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /list HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 02:46:50 [error] 34#34: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?user.list HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 02:47:10 [error] 34#34: *2 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 02:47:19 [error] 34#34: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 02:47:26 [info] 34#34: *1 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 02:57:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 02:57:59 [notice] 34#34: gracefully shutting down
+2021/06/14 02:57:59 [notice] 34#34: exiting
+2021/06/14 02:57:59 [notice] 34#34: exit
+2021/06/14 02:57:59 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2021/06/14 02:57:59 [notice] 1#1: worker process 34 exited with code 0
+2021/06/14 02:57:59 [notice] 1#1: exit
+2021/06/14 02:59:27 [notice] 1#1: using the "epoll" event method
+2021/06/14 02:59:27 [notice] 1#1: nginx/1.20.0
+2021/06/14 02:59:27 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 02:59:27 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 02:59:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 02:59:27 [notice] 1#1: start worker processes
+2021/06/14 02:59:27 [notice] 1#1: start worker process 26
+2021/06/14 03:10:09 [info] 26#26: *1 client sent invalid method while reading client request line, client: 64.227.97.195, server: _, request: " 87Q¡)BºA     "
+2021/06/14 03:15:16 [info] 26#26: *2 recv() failed (104: Connection reset by peer) while waiting for request, client: 47.100.51.60, server: 0.0.0.0:80
+2021/06/14 03:28:29 [error] 26#26: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 128.1.248.42, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "14.63.97.151"
+2021/06/14 03:28:37 [info] 26#26: *3 client 128.1.248.42 closed keepalive connection
+2021/06/14 03:53:38 [error] 26#26: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 192.241.218.58, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "14.63.97.151"
+2021/06/14 03:53:48 [info] 26#26: *5 client 192.241.218.58 closed keepalive connection
+2021/06/14 05:31:03 [info] 26#26: *7 recv() failed (104: Connection reset by peer) while waiting for request, client: 74.120.14.39, server: 0.0.0.0:80
+2021/06/14 05:31:04 [error] 26#26: *8 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 74.120.14.39, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "14.63.97.151:80"
+2021/06/14 05:31:05 [info] 26#26: *8 client 74.120.14.39 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 05:31:05 [error] 26#26: *10 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 74.120.14.39, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "14.63.97.151"
+2021/06/14 05:31:05 [info] 26#26: *10 client 74.120.14.39 closed keepalive connection
+2021/06/14 05:55:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 05:55:13 [notice] 26#26: gracefully shutting down
+2021/06/14 05:55:13 [notice] 26#26: exiting
+2021/06/14 05:55:13 [notice] 26#26: exit
+2021/06/14 05:55:13 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2021/06/14 05:55:13 [notice] 1#1: worker process 26 exited with code 0
+2021/06/14 05:55:13 [notice] 1#1: exit
+2021/06/14 06:07:05 [notice] 1#1: using the "epoll" event method
+2021/06/14 06:07:05 [notice] 1#1: nginx/1.20.0
+2021/06/14 06:07:05 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 06:07:05 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 06:07:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 06:07:05 [notice] 1#1: start worker processes
+2021/06/14 06:07:05 [notice] 1#1: start worker process 24
+2021/06/14 06:11:12 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:11:17 [info] 24#24: *1 client 172.18.0.1 closed keepalive connection
+2021/06/14 06:11:47 [error] 24#24: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:12:47 [info] 24#24: *4 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:15:25 [error] 24#24: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:15:28 [info] 24#24: *7 client 172.18.0.1 closed keepalive connection
+2021/06/14 06:15:30 [error] 24#24: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 149.248.2.151, server: _, request: "GET /.env HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "14.63.97.151"
+2021/06/14 06:15:31 [info] 24#24: *9 client 149.248.2.151 closed keepalive connection
+2021/06/14 06:15:31 [error] 24#24: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 149.248.2.151, server: _, request: "POST / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "14.63.97.151"
+2021/06/14 06:15:31 [info] 24#24: *11 client 149.248.2.151 closed keepalive connection
+2021/06/14 06:27:30 [error] 24#24: *13 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:28:30 [info] 24#24: *14 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:28:39 [error] 24#24: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:28:57 [error] 24#24: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:29:07 [error] 24#24: *17 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:29:20 [error] 24#24: *24 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:29:39 [info] 24#24: *18 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:30:20 [info] 24#24: *25 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:31:08 [error] 24#24: *27 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:31:21 [error] 24#24: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:32:08 [info] 24#24: *28 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:34:09 [error] 24#24: *32 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/controller/user/list.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller/user/list.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function user_list() in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "172.18.0.1"
+2021/06/14 06:34:12 [info] 24#24: *32 client 172.18.0.1 closed keepalive connection
+2021/06/14 06:34:25 [error] 24#24: *34 FastCGI sent in stderr: "PHP message: PHP Warning:  include(/docker/home/controller/user/list.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller/user/list.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function user_list() in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:35:25 [info] 24#24: *35 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:37:28 [info] 24#24: *38 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:38:02 [error] 24#24: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2021/06/14 06:38:34 [info] 24#24: *41 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:39:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 06:39:04 [notice] 24#24: gracefully shutting down
+2021/06/14 06:39:04 [notice] 24#24: exiting
+2021/06/14 06:39:04 [notice] 24#24: exit
+2021/06/14 06:39:04 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/06/14 06:39:04 [notice] 1#1: worker process 24 exited with code 0
+2021/06/14 06:39:04 [notice] 1#1: exit
+2021/06/14 06:39:34 [notice] 1#1: using the "epoll" event method
+2021/06/14 06:39:34 [notice] 1#1: nginx/1.20.0
+2021/06/14 06:39:34 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 06:39:34 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 06:39:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 06:39:34 [notice] 1#1: start worker processes
+2021/06/14 06:39:34 [notice] 1#1: start worker process 24
+2021/06/14 06:39:43 [error] 24#24: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to a member function execute() on bool in /docker/home/model/user/list.php:38
+Stack trace:
+#0 /docker/home/controller/user/user.controller.php(4): user_model_list()
+#1 /docker/home/index.php(31): user_list()
+#2 {main}
+  thrown in /docker/home/model/user/list.php on line 38" while reading response header from upstream, client: 172.18.0.1, server: _, request: "GET /?route=user.list HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "localhost"
+2021/06/14 06:40:43 [info] 24#24: *2 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2021/06/14 06:46:10 [info] 24#24: *4 client 172.18.0.1 closed keepalive connection
+2021/06/14 06:52:59 [info] 24#24: *6 client sent invalid method while reading client request line, client: 106.245.140.119, server: _, request: "  à          "
+2021/06/14 07:02:42 [error] 24#24: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 89.40.73.218, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "14.63.97.151"
+2021/06/14 07:19:32 [info] 24#24: *9 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:24:37 [error] 24#24: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/model/user/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/model/user/create.php on line 6" while reading response header from upstream, client: 172.18.0.1, server: _, request: "POST /?route=user.create HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "172.18.0.1"
+2021/06/14 07:24:40 [info] 24#24: *11 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:24:40 [info] 24#24: *13 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:33:12 [info] 24#24: *15 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:37:02 [error] 24#24: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "name" in /docker/home/model/user/create.php on line 5PHP message: PHP Warning:  Undefined array key "age" in /docker/home/model/user/create.php on line 6" while reading response header from upstream, client: 172.18.0.1, server: _, request: "POST /?route=user.create HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "172.18.0.1"
+2021/06/14 07:37:05 [info] 24#24: *17 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:37:05 [info] 24#24: *19 client 172.18.0.1 closed keepalive connection
+2021/06/14 07:52:11 [error] 24#24: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 23.148.145.28, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "14.63.97.151:80"
+2021/06/14 08:33:28 [error] 24#24: *23 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 209.141.33.139, server: _, request: "POST /boaform/admin/formLogin HTTP/1.1", upstream: "fastcgi://172.18.0.2:9000", host: "14.63.97.151:80", referrer: "http://14.63.97.151:80/admin/login.asp"
+2021/06/14 08:33:28 [info] 24#24: *23 client prematurely closed connection while reading client pipelined request line, client: 209.141.33.139, server: _
+2021/06/14 08:36:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 08:36:15 [notice] 24#24: gracefully shutting down
+2021/06/14 08:36:15 [notice] 24#24: exiting
+2021/06/14 08:36:15 [notice] 24#24: exit
+2021/06/14 08:36:15 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/06/14 08:36:15 [notice] 1#1: worker process 24 exited with code 0
+2021/06/14 08:36:15 [notice] 1#1: exit
+2021/06/14 08:36:20 [notice] 1#1: using the "epoll" event method
+2021/06/14 08:36:20 [notice] 1#1: nginx/1.20.0
+2021/06/14 08:36:20 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 08:36:20 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 08:36:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 08:36:20 [notice] 1#1: start worker processes
+2021/06/14 08:36:20 [notice] 1#1: start worker process 24
+2021/06/14 08:36:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 08:36:43 [notice] 24#24: gracefully shutting down
+2021/06/14 08:36:43 [notice] 24#24: exiting
+2021/06/14 08:36:43 [notice] 24#24: exit
+2021/06/14 08:36:43 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2021/06/14 08:36:43 [notice] 1#1: worker process 24 exited with code 0
+2021/06/14 08:36:43 [notice] 1#1: exit
+2021/06/14 08:37:01 [notice] 1#1: using the "epoll" event method
+2021/06/14 08:37:01 [notice] 1#1: nginx/1.20.0
+2021/06/14 08:37:01 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 08:37:01 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 08:37:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 08:37:01 [notice] 1#1: start worker processes
+2021/06/14 08:37:01 [notice] 1#1: start worker process 33
+2021/06/14 08:37:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 08:37:26 [notice] 33#33: gracefully shutting down
+2021/06/14 08:37:26 [notice] 33#33: exiting
+2021/06/14 08:37:26 [notice] 33#33: exit
+2021/06/14 08:37:26 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2021/06/14 08:37:26 [notice] 1#1: worker process 33 exited with code 0
+2021/06/14 08:37:26 [notice] 1#1: exit
+2021/06/14 09:49:14 [notice] 1#1: using the "epoll" event method
+2021/06/14 09:49:14 [notice] 1#1: nginx/1.20.0
+2021/06/14 09:49:14 [notice] 1#1: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) 
+2021/06/14 09:49:14 [notice] 1#1: OS: Linux 5.8.0-55-generic
+2021/06/14 09:49:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/06/14 09:49:14 [notice] 1#1: start worker processes
+2021/06/14 09:49:14 [notice] 1#1: start worker process 32
+2021/06/14 09:50:23 [error] 32#32: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.25.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.25.0.2:9000", host: "localhost"
+2021/06/14 09:50:30 [info] 32#32: *1 client 172.25.0.1 closed keepalive connection
+2021/06/14 09:50:35 [error] 32#32: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "route" in /docker/home/index.php on line 27PHP message: PHP Warning:  include(/docker/home/controller//.controller.php): Failed to open stream: No such file or directory in /docker/home/index.php on line 29PHP message: PHP Warning:  include(): Failed opening '/docker/home/controller//.controller.php' for inclusion (include_path='.:/usr/local/lib/php') in /docker/home/index.php on line 29PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function () in /docker/home/index.php:31
+Stack trace:
+#0 {main}
+  thrown in /docker/home/index.php on line 31" while reading response header from upstream, client: 172.25.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://172.25.0.2:9000", host: "localhost"
+2021/06/14 09:50:54 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/06/14 09:50:54 [notice] 32#32: gracefully shutting down
+2021/06/14 09:50:54 [info] 32#32: *4 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2021/06/14 09:50:54 [notice] 32#32: exiting
+2021/06/14 09:50:54 [notice] 32#32: exit
+2021/06/14 09:50:54 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/06/14 09:50:54 [notice] 1#1: worker process 32 exited with code 0
+2021/06/14 09:50:54 [notice] 1#1: exit
